@@ -4,7 +4,7 @@
   gather_facts: False
   vars:
     # Variables 'vnet', 'subnet', 'vmname' and 'resgrp' need to be provided at command line with arg --extra-vars
-    dnsname: '{{ vmname }}.westeurope.cloudapp.azure.com'
+    dnsname: '{{ vmname }}.eastus.cloudapp.azure.com'
     # The DNS name might not be right depending on your region!!
     ip: "{{ lookup ('dig', '{{ dnsname }}') }}"
    
